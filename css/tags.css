@@ -1,0 +1,56 @@
+.main {
+  min-width: 320px;
+  max-width: 800px;
+  background: white;
+  padding-top: 250px;
+  margin-top: 50px;
+  padding-top: 0px;
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ccc;
+}
+
+/*라디오버튼 숨김*/
+.main input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #ccc;
+  border: 1px solid transparent;
+}
+
+label:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+/*input 클릭시, label 스타일*/
+input:checked + label {
+  color: #555;
+  border: 1px solid #000;
+  border-top: 2px solid grey;
+  border-bottom: 1px solid #000;
+}
+
+#whole:checked ~ #whole,
+#study:checked ~ #study,
+#bicycle:checked ~ #bicycle,
+#car:checked ~ #car,
+#lifestyle:checked ~ #lifestyle {
+  display: block;
+}
+.main img {
+  display: inline;
+  width: 390px;
+  height: 240px;
+}
