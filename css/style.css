@@ -3,11 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import "table.css";
-
-body {
-  margin: 50px 560px;
+* {
+  align-items: center;
 }
-
+body {
+  padding: 30px 490px;
+}
 .search-bar {
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,7 @@ body {
 }
 [class*="fas"] {
   cursor: pointer;
+  padding-right: 10px;
 }
 
 header {
@@ -54,6 +56,9 @@ header img {
 }
 header input {
   margin-left: 30px;
+}
+header input:hover {
+  background-color: skyblue;
 }
 
 p {
